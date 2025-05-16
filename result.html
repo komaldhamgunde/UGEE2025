@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UGEE Application Result</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #fff;
+      padding: 15px;
+    }
+    .header {
+      text-align: center;
+    }
+    .header h2 {
+      color: green;
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .tabs div {
+      padding: 10px 20px;
+      border-radius: 5px 5px 0 0;
+      margin: 0 5px;
+    }
+    .tabs .active {
+      background-color: #f57c00;
+      color: #fff;
+    }
+    .tabs .inactive {
+      background-color: #e0e0e0;
+      color: #777;
+    }
+    .btn {
+      background-color: #0097a7;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin: 15px auto;
+      display: block;
+      text-align: center;
+      width: 90%;
+      font-size: 16px;
+    }
+    .result-box {
+      background: #f3f3f3;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+    .result-box p {
+      margin: 10px 0;
+    }
+    .highlight {
+      font-weight: bold;
+    }
+    .note {
+      margin-top: 20px;
+      background: #ffe0e0;
+      padding: 10px;
+      border-radius: 6px;
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>Application form for UGEE</h2>
+    <p>Registration No: <strong>R25519608</strong></p>
+  </div>
+
+  <div class="tabs">
+    <div class="active">Application</div>
+    <div class="inactive">Status</div>
+  </div>
+
+  <button class="btn">Registration Details</button>
+
+  <div class="result-box">
+    <p><span class="highlight">Application Number:</span> U25112819</p>
+    <p><span class="highlight">Registration Completed:</span> Yes</p>
+    <p><span class="highlight">Application Form Completed:</span> Yes (<a href="#">Download</a>)</p>
+    <p><span class="highlight">Application Fee Paid:</span> Yes (<a href="#">Download</a>)</p>
+    <p><span class="highlight">SUPR Marks Obtained:</span> 11.25</p>
+    <p><span class="highlight">REAP Marks Obtained:</span> 62.00</p>
+    <p><span class="highlight">SUPR Cutoff:</span> 12.75</p>
+    <p><span class="highlight">REAP Cutoff:</span> 64.50</p>
+  </div>
+
+  <div class="note">
+    Sorry, you have NOT been shortlisted for an interview for admission to the Dual Degree (DD) programme via the UGEE mode.
+  </div>
+
+</body>
+</html>

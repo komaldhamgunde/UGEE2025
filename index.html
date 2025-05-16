@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IIIT UGEE Login</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    .container {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .logo {
+      display: block;
+      max-width: 200px;
+      margin: 20px auto 10px auto;
+    }
+    h2 {
+      text-align: center;
+      color: #1e7f1e;
+      margin-bottom: 20px;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #f57c00;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ef6c00;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://www.iiit.ac.in/wp-content/uploads/2022/06/IIIT_Hyderabad_Logo-e1655116937986.jpg" alt="IIIT Logo" class="logo">
+    <h2>UGEE Login</h2>
+    <form onsubmit="return login()">
+      <input type="text" id="userid" placeholder="User ID" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById("userid").value;
+      const pass = document.getElementById("password").value;
+      if (user === "dhamgundek@gmail.com" && pass === "Komal@2006") {
+        window.location.href = "result.html";
+      } else {
+        alert("Invalid credentials");
+      }
+      return false; // prevent form from submitting
+    }
+  </script>
+</body>
+</html>
